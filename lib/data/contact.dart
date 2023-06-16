@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/colors.dart';
 import 'package:flutter_application_1/data/cont_info.dart';
+import 'package:flutter_application_1/screeens/mobile_chat_screen.dart';
 
 class Contact_list extends StatelessWidget {
   const Contact_list({super.key});
@@ -16,7 +17,11 @@ class Contact_list extends StatelessWidget {
             return Column(
               children: [
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => mobile_chat(),
+                    ));
+                  },
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 8.0),
                     child: ListTile(

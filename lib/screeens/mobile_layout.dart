@@ -49,6 +49,11 @@ class mobile_layout extends StatelessWidget {
               ]),
         ),
         body: Contact_list(),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: tabColor,
+          child: Icon(Icons.comment),
+        ),
       ),
     );
   }
